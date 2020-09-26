@@ -6,6 +6,9 @@
  */
 
 import "./style.css"
+import "@styles/normalize.css"
+import "@styles/fonts.css"
+import "@styles/typography.css"
 
 import Header from "@components/Header"
 import PropTypes from "prop-types"

@@ -1,5 +1,3 @@
-const postcssPresetEnv = require(`postcss-preset-env`)
-
 module.exports = () => ({
   plugins: {
     // PostCSS Preset Env includes autoprefixer and browsers option will be passed to it automatically.
@@ -10,5 +8,10 @@ module.exports = () => ({
     },
     "postcss-import": {},
     "postcss-nested": {},
+    "postcss-simple-vars": {
+      variables: function () {
+        return require("./src/styles/variables/index")
+      },
+    },
   },
 })
