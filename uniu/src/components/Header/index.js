@@ -19,14 +19,13 @@ const Header = () => {
             <a href="/">Features</a>
           </li>
           <li>
-            <a href="/">Go dark</a>
+            <Toggle />
           </li>
           <li>
             <a href="/">Download</a>
           </li>
         </ul>
       </nav>
-      {/* <Toggle /> */}
     </header>
   )
 }
