@@ -7,8 +7,8 @@
 
 import "./style.css"
 import "@styles/normalize.css"
-import "@styles/fonts.css"
 import "@styles/typography.css"
+import "@styles/global.css"
 
 import Header from "@components/Header"
 import PropTypes from "prop-types"
@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+
       <div
         style={{
           margin: `0 auto`,
