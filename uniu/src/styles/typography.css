@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
+  font-family: "Roboto", sans-serif;
 
   @media (--laptop) {
     font-size: 1.3rem;
@@ -21,6 +22,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -29,6 +31,7 @@ h3,
 h4,
 p {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
