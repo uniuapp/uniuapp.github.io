@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <a href="/">
+        <a className="logo" href="/">
           <Logo />
         </a>
         <ul>
