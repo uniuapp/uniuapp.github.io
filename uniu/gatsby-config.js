@@ -8,6 +8,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-svgr`,
+      options: {
+        svgoConfig: {
+          removeViewBox: false,
+          mergePaths: false,
+          collapseGroups: false,
+        },
+      },
+    },
+    `gatsby-plugin-dark-mode`,
+    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {

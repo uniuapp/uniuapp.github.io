@@ -8,10 +8,5 @@ module.exports = () => ({
     },
     "postcss-import": {},
     "postcss-nested": {},
-    "postcss-simple-vars": {
-      variables: function () {
-        return require("./src/styles/variables/index")
-      },
-    },
   },
 })
