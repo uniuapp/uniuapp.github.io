@@ -1,6 +1,10 @@
 footer {
   background-color: var(--red);
-  padding: 3rem 5rem;
+  padding: 3rem 2.5rem;
+
+  @media (--tablet) {
+    padding: 3rem 5rem;
+  }
 
   .upper {
     display: flex;
@@ -33,21 +37,41 @@ footer {
 
   .lower {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media (--tablet) {
+      flex-direction: row;
+    }
 
     p {
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 1.8rem;
       color: var(--white);
+      margin-bottom: 4rem;
+
+      @media (--tablet) {
+        margin-bottom: 0;
+      }
     }
 
     &__links {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+
+      @media (--tablet) {
+        flex-direction: row;
+        align-items: center;
+      }
 
       > *:first-child {
-        margin-right: 6rem;
+        margin-bottom: 2rem;
+
+        @media (--tablet) {
+          margin-right: 6rem;
+          margin-bottom: 0;
+        }
       }
 
       a {

@@ -1,8 +1,17 @@
 header {
   background-color: var(--bg);
   height: 9rem;
-  padding: 0 5rem;
+  padding: 0 2.5rem;
   box-shadow: 0px 2px 33px -1px rgba(0, 0, 0, 0.09);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  @media (--tablet) {
+    padding: 0 5rem;
+  }
 
   nav {
     display: flex;
@@ -34,6 +43,16 @@ header {
         padding: 0;
       }
 
+      li:nth-child(1),
+      li:nth-child(2),
+      li:nth-child(3) {
+        display: none;
+
+        @media (--tablet) {
+          display: inline;
+        }
+      }
+
       li:not(:last-child) {
         margin-right: 6rem;
 
@@ -44,7 +63,7 @@ header {
           line-height: 1.8rem;
           text-transform: uppercase;
           font-weight: 700;
-          color: var(--black);
+          color: var(--text);
           position: relative;
           z-index: 1;
 
