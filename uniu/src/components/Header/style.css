@@ -107,3 +107,7 @@ header {
     }
   }
 }
+
+.fake-header {
+  height: 9rem;
+}
