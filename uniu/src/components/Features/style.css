@@ -1,0 +1,37 @@
+.slick-slider {
+  border: 2px solid blueviolet;
+  width: 80%;
+  margin: 20rem auto;
+  height: 70vh;
+
+  button {
+    position: absolute;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    color: red;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+
+    &:before {
+      color: var(--red);
+      font-size: 3.4rem;
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 0.75;
+      transition: opacity 0.25s ease-in-out;
+    }
+  }
+
+  .slick-prev {
+    left: -10rem;
+  }
+
+  .slick-next {
+    right: -10rem;
+    top: 50%;
+  }
+}
