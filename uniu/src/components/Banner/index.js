@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="banner__left__copy">
           <h5>UNIU</h5>
           <h3>
-            Download it on <br /> Google Play and App Store
+            Scaricala ora su <br /> Google Play e App Store
           </h3>
         </div>
         <div className="banner__left__badges">
