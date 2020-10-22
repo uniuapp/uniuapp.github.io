@@ -7,7 +7,9 @@ import Toggle from "@components/Toggle"
 const Header = () => {
   return (
     <>
-      <header>
+      <header
+        style={{ transition: "color 0.2s ease-out, background 0.2s ease-out" }}
+      >
         <nav>
           <a className="logo" href="/">
             <Logo />
