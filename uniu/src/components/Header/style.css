@@ -111,3 +111,9 @@ header {
 .fake-header {
   height: 9rem;
 }
+
+body.dark {
+  header {
+    border-bottom: 1px solid black;
+  }
+}
