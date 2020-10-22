@@ -4,12 +4,14 @@ import React from "react"
 import SEO from "../components/seo"
 import Hero from "@components/Hero"
 import Features from "@components/Features"
+import Banner from "@components/Banner"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
     <Features />
+    <Banner />
     <br />
     <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     <Link to="/page-2/">Go to page 2</Link> <br />
