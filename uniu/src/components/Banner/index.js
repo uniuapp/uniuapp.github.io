@@ -6,7 +6,10 @@ import GooglePlay from "@assets/google-play-badge.png"
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div
+      className="banner"
+      style={{ transition: "color 0.2s ease-out, background 0.2s ease-out" }}
+    >
       <div className="banner__left">
         <div className="banner__left__copy">
           <h5>UNIU</h5>
