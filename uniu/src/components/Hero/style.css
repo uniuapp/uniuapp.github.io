@@ -10,7 +10,7 @@
 
   &__copy {
     background-color: var(--bg);
-    /* background-color: violet; */
+    /* background-color: blue; */
     width: 50%;
 
     @media (--laptop) {
@@ -31,7 +31,6 @@
   }
 
   &__media {
-    /* background-color: cyan; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -39,12 +38,16 @@
     position: relative;
 
     &__device {
-      width: 25rem;
-      height: 50rem;
-      background-color: var(--white);
+      width: 28rem;
+      background-color: transparent;
       border-radius: 40px;
       z-index: 1;
-      border: 5px solid black;
+
+      img {
+        border-radius: 30px;
+        border: 8px solid var(--bg);
+        box-shadow: 0px 2px 53px -10px rgba(0, 0, 0, 0.32);
+      }
     }
 
     &__ellipse {

@@ -3,6 +3,7 @@ import "./style.css"
 import React from "react"
 import { ReactComponent as Ellipse } from "@assets/ellipse.svg"
 import { ReactComponent as Blob } from "@assets/blob-1.svg"
+import ScreenEsami from "@assets/screen-esami.png"
 
 const Home = () => {
   return (
@@ -24,7 +25,9 @@ const Home = () => {
         <div className="hero__media__blob">
           <Blob />
         </div>
-        <div className="hero__media__device"></div>
+        <div className="hero__media__device">
+          <img src={ScreenEsami} />
+        </div>
       </div>
     </div>
   )
