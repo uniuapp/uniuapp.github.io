@@ -23,8 +23,6 @@ const Layout = ({ children }) => {
     const toggle = document.querySelector(".toggle")
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry)
-
         if (entry.isIntersecting) {
           toggle.style.bottom = null
           toggle.style.transform = `translateY(200%)`

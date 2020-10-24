@@ -80,10 +80,10 @@ header {
           &:after {
             content: "";
             width: 10%;
-            height: 0.7rem;
+            height: 0.2rem;
             position: absolute;
             left: 0;
-            bottom: 0.07em;
+            bottom: 0;
             background-color: var(--yellow);
             transition: opacity 0.25s, width 0.3s cubic-bezier(0.6, 0, 0.4, 1);
             opacity: 0;

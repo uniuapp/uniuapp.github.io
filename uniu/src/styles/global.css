@@ -4,6 +4,10 @@ body {
   --text: #000000;
   --text-light: #6e6e6e;
 
+  --device-border: #ffffff;
+
+  --arrows-bg: #ffffff;
+
   --white: #ffffff;
   --black: #000000;
 
@@ -23,6 +27,10 @@ body.dark {
   --bg: #1e1e1e;
   --banner-bg: var(--red);
   --text: #ffffff;
+
+  --device-border: #000000;
+
+  --arrows-bg: #131012;
 }
 
 body {
