@@ -3,6 +3,9 @@ import "./style.css"
 import React from "react"
 import { ReactComponent as AppStore } from "@assets/app-store-badge.svg"
 import GooglePlay from "@assets/google-play-badge.png"
+import Phone from "@components/Phone"
+import ScreenOrariBezels from "@assets/screen-orari-bezels.png"
+import ScreenEsamiBezels from "@assets/screen-esami-bezels.png"
 
 const Banner = () => {
   return (
@@ -25,6 +28,10 @@ const Banner = () => {
             <img src={GooglePlay} />
           </a>
         </div>
+      </div>
+      <div className="banner__right">
+        <Phone screen={ScreenOrariBezels} bezels />
+        <Phone screen={ScreenEsamiBezels} bezels />
       </div>
     </div>
   )

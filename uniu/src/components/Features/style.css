@@ -1,12 +1,11 @@
 .carousel {
   width: 100%;
   height: 80vh;
-  margin: 8rem auto;
+  margin: 10rem auto 15rem auto;
   overflow: hidden;
   position: relative;
 
   &__inner-container {
-    border: 1px solid red;
     height: 100%;
     display: flex;
     transition: transform 0.65s cubic-bezier(0.95, 0.05, 0.795, 0.035);
