@@ -4,6 +4,7 @@ import { ReactComponent as Email } from "@assets/email.svg"
 import { ReactComponent as Instagram } from "@assets/instagram.svg"
 import { ReactComponent as LogoWhite } from "@assets/logo-white.svg"
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -24,8 +25,15 @@ const Footer = () => {
       <div className="lower">
         <p>© Marco Tammaro - Serena Falchieri</p>
         <div className="lower__links">
-          <a href="/">Termini e Condizioni</a>
-          <a href="/">Privacy Policy</a>
+          <Link
+            to="/terms-and-conditions"
+            activeStyle={{ textDecoration: "none" }}
+          >
+            Termini e Condizioni
+          </Link>
+          <Link to="/privacy-policy" activeStyle={{ textDecoration: "none" }}>
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
