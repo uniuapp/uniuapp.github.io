@@ -8,14 +8,17 @@ class Toggle extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label className="toggle">
-            <input
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              checked={theme === "dark"}
+          <div
+            onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
+            className="toggle"
+          >
+            <span
+              style={{
+                transform: `translateX(${theme === "dark" ? 26 : 0}px)`,
+              }}
+              className="toggle__handle"
             />
-            {theme === "dark" ? "Go light" : "Go dark"}
-          </label>
+          </div>
         )}
       </ThemeToggler>
     )

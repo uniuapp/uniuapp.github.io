@@ -1,34 +1,28 @@
 .toggle {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--text);
-  position: relative;
-  z-index: 1;
+  width: 5.6rem;
+  height: 3rem;
+  background-color: var(--bg);
+  border: 1px solid var(--text);
+  border-radius: 2.4rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
   cursor: pointer;
+  user-select: none;
+  pointer-events: auto;
+  transition: transform 0.25s ease-out, border-color 0.25s ease-in;
 
-  &:after {
-    content: "";
-    width: 10%;
-    height: 0.7rem;
-    position: absolute;
-    left: 0;
-    bottom: 0.07em;
-    background-color: var(--yellow);
-    transition: opacity 0.25s, width 0.3s cubic-bezier(0.6, 0, 0.4, 1);
-    opacity: 0;
-    z-index: -1;
-  }
+  position: fixed;
+  bottom: 2.5rem;
+  left: 5rem;
 
-  &:hover::after {
-    opacity: 1;
-    width: 100%;
-  }
-
-  input {
-    display: none;
+  &__handle {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--text);
+    display: inline-block;
+    border-radius: 100%;
+    transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      background 0.2s ease-in;
   }
 }

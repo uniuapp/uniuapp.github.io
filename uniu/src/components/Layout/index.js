@@ -13,9 +13,37 @@ import "@styles/global.css"
 import Footer from "@components/Footer"
 import Header from "@components/Header"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect } from "react"
+import Toggle from "@components/Toggle"
 
 const Layout = ({ children }) => {
+  // hide toggle when footer is in viewport
+  useEffect(() => {
+    const el = document.querySelector("footer")
+    const toggle = document.querySelector(".toggle")
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry)
+
+        if (entry.isIntersecting) {
+          toggle.style.bottom = null
+          toggle.style.transform = `translateY(200%)`
+        } else {
+          toggle.style.bottom = `2.5rem`
+          toggle.style.transform = `translateY(0%)`
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    )
+    if (el) {
+      observer.observe(el)
+    }
+  }, [])
+
   return (
     <>
       <Header />
@@ -30,6 +58,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
+      <Toggle />
     </>
   )
 }

@@ -2,7 +2,6 @@ import "./style.css"
 
 import { ReactComponent as Logo } from "@assets/logo.svg"
 import React from "react"
-import Toggle from "@components/Toggle"
 
 const Header = () => {
   return (
@@ -21,9 +20,7 @@ const Header = () => {
             <li>
               <a href="/">Features</a>
             </li>
-            <li>
-              <Toggle />
-            </li>
+
             <li>
               <a href="/">Download</a>
             </li>
