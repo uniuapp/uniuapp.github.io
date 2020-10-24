@@ -1,65 +1,30 @@
-.slick-slider {
-  border: 2px solid blueviolet;
-  width: 80%;
-  margin: 20rem auto;
-  height: 70vh;
+.carousel {
+  width: 90%;
+  height: 80vh;
+  margin: 8rem auto;
+  overflow: hidden;
+  position: relative;
 
-  button {
-    position: absolute;
-    top: 50%;
-    width: 5rem;
-    height: 5rem;
-    z-index: 1;
-    color: red;
-    opacity: 1;
-    transition: opacity 0.25s ease-in-out;
+  &__inner-container {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    transition: transform 0.75s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
 
-    &:before {
-      color: var(--red);
-      font-size: 3.4rem;
-      opacity: 1;
+  &__item {
+    height: 100%;
+    background-color: darkblue;
+  }
+
+  &__controls {
+    background-color: cyan;
+    width: 20rem;
+    height: 20rem;
+
+    button {
+      width: 10rem;
+      border: 1px solid red;
     }
-
-    &:hover {
-      opacity: 0.75;
-      transition: opacity 0.25s ease-in-out;
-    }
-  }
-
-  .slick-prev {
-    left: -10rem;
-  }
-
-  .slick-next {
-    right: -10rem;
-    top: 50%;
-  }
-}
-
-.slides {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 1px solid red;
-  width: 100%;
-
-  &__screen-wrapper {
-    width: 26rem;
-    background-color: transparent;
-    border-radius: 40px;
-    border: 1px solid blue;
-    display: inline-block;
-
-    img {
-      border-radius: 30px;
-      border: 8px solid var(--bg);
-      box-shadow: 0px 2px 53px -10px rgba(0, 0, 0, 0.32);
-    }
-  }
-
-  h1,
-  p {
-    margin: 0;
-    padding: 0;
   }
 }
