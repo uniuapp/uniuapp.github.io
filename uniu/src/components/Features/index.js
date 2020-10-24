@@ -5,6 +5,8 @@ import React, { useEffect, useRef, useState } from "react"
 import ScreenOrari from "@assets/screen-orari.png"
 import ScreenEsami from "@assets/screen-esami.png"
 import ScreenPrevisioni from "@assets/screen-previsioni.png"
+import Phone from "@components/Phone"
+import { ReactComponent as Arrow } from "@assets/arrow.svg"
 
 const Features = () => {
   const itemRef = useRef()
@@ -19,11 +21,22 @@ const Features = () => {
   const [carouselWidth, setCarouselWidth] = useState()
 
   const slides = [
-    { title: "slide 1", paragraph: "this is a paragraph", screen: ScreenOrari },
-    { title: "slide 2", paragraph: "this is a paragraph", screen: ScreenEsami },
     {
-      title: "slide 3",
-      paragraph: "this is a paragraph",
+      title: "Slide 1",
+      paragraph:
+        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
+      screen: ScreenOrari,
+    },
+    {
+      title: "Slide 2",
+      paragraph:
+        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
+      screen: ScreenEsami,
+    },
+    {
+      title: "Slide 3",
+      paragraph:
+        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
       screen: ScreenPrevisioni,
     },
   ]
@@ -40,7 +53,7 @@ const Features = () => {
     const nextIndex = index + 1
     setIndex(nextIndex)
 
-    if (nextIndex == slides.length - 1) {
+    if (nextIndex === slides.length - 1) {
       setNextDisabled(true)
     }
     setPrevDisabled(false)
@@ -52,7 +65,7 @@ const Features = () => {
     const nextIndex = index - 1
     setIndex(nextIndex)
 
-    if (nextIndex == 0) {
+    if (nextIndex === 0) {
       setPrevDisabled(true)
     }
     setNextDisabled(false)
@@ -73,20 +86,34 @@ const Features = () => {
               ref={itemRef}
               style={{
                 width: carouselWidth,
-                backgroundColor: i === 0 ? "blue" : i === 1 ? "red" : "yellow",
+                // backgroundColor: i === 0 ? "blue" : i === 1 ? "red" : "yellow",
               }}
             >
-              <p>ciao</p>
+              <Phone screen={item.screen} />
+              <div className="carousel__item__copy">
+                <h2>{item.title}</h2>
+                <p>{item.paragraph}</p>
+              </div>
             </div>
           ))}
         </div>
-      </div>
-      <div className="carousel__controls">
-        <button disabled={prevDisabled} onClick={prevSlide}>
-          prev
+
+        <button
+          className="carousel__controls--prev"
+          disabled={prevDisabled}
+          onClick={prevSlide}
+          style={{ opacity: prevDisabled ? 0 : null }}
+        >
+          <Arrow />
         </button>
-        <button disabled={nextDisabled} onClick={nextSlide}>
-          next
+
+        <button
+          className="carousel__controls--next"
+          disabled={nextDisabled}
+          onClick={nextSlide}
+          style={{ opacity: nextDisabled ? 0 : null }}
+        >
+          <Arrow />
         </button>
       </div>
     </>
