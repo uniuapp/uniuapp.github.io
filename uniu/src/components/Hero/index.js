@@ -3,6 +3,8 @@ import "./style.css"
 import React from "react"
 import { ReactComponent as Ellipse } from "@assets/ellipse.svg"
 import { ReactComponent as Blob } from "@assets/blob-1.svg"
+import { ReactComponent as Triangles } from "@assets/triangles.svg"
+
 import ScreenEsami from "@assets/screen-esami.png"
 import Phone from "@components/Phone"
 

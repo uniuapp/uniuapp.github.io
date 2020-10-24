@@ -1,7 +1,6 @@
 .hero {
-  /* background-color: pink; */
-
   display: flex;
+
   @media (--laptop) {
     height: 90vh;
     flex-direction: row;
@@ -10,17 +9,14 @@
 
   &__copy {
     background-color: var(--bg);
-    /* background-color: blue; */
     width: 50%;
 
     @media (--laptop) {
       padding-top: 8rem;
-      /* padding-left: 20rem; */
     }
 
     h1 {
       max-width: 50rem;
-      /* background-color: red; */
       margin-bottom: 2rem;
     }
 
@@ -36,22 +32,33 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: url("../../assets/triangles.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__ellipse,
+    &__blob {
+      position: absolute;
+      transition: transform 0.25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.25s ease-in-out;
+      }
+    }
 
     &__ellipse {
-      position: absolute;
-
       @media (--laptop) {
-        top: 1rem;
-        left: 7rem;
+        top: 0;
+        left: 9rem;
       }
     }
 
     &__blob {
-      position: absolute;
-
       @media (--laptop) {
-        bottom: -7rem;
-        right: 12rem;
+        bottom: -2rem;
+        right: 13rem;
       }
     }
   }
