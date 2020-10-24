@@ -1,0 +1,12 @@
+.phone {
+  width: 28rem;
+  background-color: transparent;
+  border-radius: 40px;
+  z-index: 1;
+
+  img {
+    border-radius: 30px;
+    border: 8px solid var(--bg);
+    box-shadow: 0px 2px 53px -10px rgba(0, 0, 0, 0.32);
+  }
+}
