@@ -7,6 +7,7 @@ import ScreenEsami from "@assets/screen-esami.png"
 import ScreenPrevisioni from "@assets/screen-previsioni.png"
 import Phone from "@components/Phone"
 import { ReactComponent as Arrow } from "@assets/arrow.svg"
+import { ReactComponent as Blob } from "@assets/blob-2.svg"
 
 const Features = () => {
   const itemRef = useRef()
@@ -93,6 +94,21 @@ const Features = () => {
               <div className="carousel__item__copy">
                 <h2>{item.title}</h2>
                 <p>{item.paragraph}</p>
+              </div>
+              <div
+                className="carousel__item__ellipse"
+                style={{
+                  backgroundColor:
+                    i === 0 ? "#9472ee" : i === 1 ? "#007afe" : "#ea6ba3",
+                }}
+              />
+              <div
+                className="carousel__item__blob"
+                style={{
+                  color: i === 0 ? "#ebb303" : i === 1 ? "#28b227" : "#6c829e",
+                }}
+              >
+                <Blob />
               </div>
             </div>
           ))}
