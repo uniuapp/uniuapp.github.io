@@ -17,15 +17,16 @@ import React, { useEffect } from "react"
 import Toggle from "@components/Toggle"
 
 const Layout = ({ children }) => {
-  // hide toggle when footer is in viewport
   useEffect(() => {
     const el = document.querySelector("footer")
     const toggle = document.querySelector(".toggle")
+
+    // hide toggle when footer is in viewport
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           toggle.style.bottom = null
-          toggle.style.transform = `translateY(200%)`
+          toggle.style.transform = `translateY(300%)`
         } else {
           toggle.style.bottom = `2.5rem`
           toggle.style.transform = `translateY(0%)`

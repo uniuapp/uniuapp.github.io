@@ -22,6 +22,15 @@
     left: 5rem;
   }
 
+  &__label {
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
   &__handle {
     width: 1.8rem;
     height: 1.8rem;

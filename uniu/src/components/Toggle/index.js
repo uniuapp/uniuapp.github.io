@@ -12,6 +12,9 @@ class Toggle extends React.Component {
             onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
             className="toggle"
           >
+            <span className="toggle__label">
+              {theme === "light" ? "DARK" : "LIGHT"}
+            </span>
             <span
               style={{
                 transform: `translateX(${theme === "dark" ? 26 : 0}px)`,
