@@ -14,7 +14,13 @@
 
   position: fixed;
   bottom: 2.5rem;
-  left: 5rem;
+  left: 2.5rem;
+  z-index: 99999;
+
+  @media (--tablet) {
+    bottom: 2.5rem;
+    left: 5rem;
+  }
 
   &__handle {
     width: 1.8rem;

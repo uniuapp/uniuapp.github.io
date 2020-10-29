@@ -15,13 +15,6 @@ const Header = () => {
           </a>
           <ul>
             <li>
-              <a href="/">Esplora</a>
-            </li>
-            <li>
-              <a href="/">Features</a>
-            </li>
-
-            <li>
               <a href="/">Download</a>
             </li>
           </ul>

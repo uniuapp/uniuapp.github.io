@@ -27,7 +27,9 @@ const Home = () => {
         <div className="hero__media__blob">
           <Blob />
         </div>
-        <Phone screen={ScreenEsami} />
+        <div className="hero__media__device">
+          <Phone screen={ScreenEsami} />
+        </div>
       </div>
     </div>
   )
