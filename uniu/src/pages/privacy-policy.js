@@ -9,7 +9,7 @@ const PrivacyPolicy = () => (
     <SEO title="Page two" />
     <div className="pp-container">
       {/* START OF PRIVACY POLICY TEXT */}
-      <h1>PRIVACY POLICY AGREEMENT</h1>
+      <h1>PRIVACY POLICY</h1>
       <br />
       <h3>Last updated March 01, 2020</h3>
       <br />
