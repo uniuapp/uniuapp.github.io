@@ -1,6 +1,7 @@
 body {
   --bg: #ffffff;
   --banner-bg: #000000;
+
   --text: #000000;
   --text-light: #6e6e6e;
 
@@ -25,7 +26,8 @@ body.dark {
   -webkit-font-smoothing: antialiased;
 
   --bg: #1e1e1e;
-  --banner-bg: var(--red);
+  --banner-bg: black;
+
   --text: #ffffff;
 
   --device-border: #000000;
