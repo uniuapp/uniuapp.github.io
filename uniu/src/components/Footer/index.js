@@ -33,9 +33,6 @@ const Footer = () => {
           >
             Termini e Condizioni
           </Link>
-          <Link to="/privacy-policy" activeStyle={{ textDecoration: "none" }}>
-            Privacy Policy
-          </Link>
         </div>
       </div>
     </footer>
