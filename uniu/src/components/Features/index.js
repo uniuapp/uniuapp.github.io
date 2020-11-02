@@ -23,21 +23,21 @@ const Features = () => {
 
   const slides = [
     {
-      title: "Slide 1",
+      title: "Le tue lezioni",
       paragraph:
-        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
+        "Registrara l'orario delle lezioni e visualizza il piano della giornata o dell'intera settimana. L'app ti invierà una notifica quando è arrivato il momento di cambiare aula.",
       screen: ScreenOrari,
     },
     {
-      title: "Slide 2",
+      title: "I tuoi esami",
       paragraph:
-        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
+        "Monitora facilmente la tua carriera universitaria. Esami, CFU e voti sempre a portata di mano.",
       screen: ScreenEsami,
     },
     {
-      title: "Slide 3",
+      title: "Le tue statistiche",
       paragraph:
-        "this is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraphthis is a paragraph",
+        "Fai previsioni sugli esami futuri in maniera intelligente e monitora come cambierebbe la tua media.",
       screen: ScreenPrevisioni,
     },
   ]

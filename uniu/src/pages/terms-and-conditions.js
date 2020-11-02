@@ -27,6 +27,11 @@ const TermsAndConditions = () => (
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   </Layout>
 )

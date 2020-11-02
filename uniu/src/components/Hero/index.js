@@ -14,10 +14,12 @@ const Home = () => {
       style={{ transition: "color 0.2s ease-out, background 0.2s ease-out" }}
     >
       <div className="hero__copy">
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>UniU - l'università smart</h1>
         <p>
-          Donec vehicula arcu ac neque ornare tincidunt. Ut vitae nisl
-          odio.uspendisse libero sapien, lobortis vitae.
+          UniU porta la tua università all'interno del tuo smartphone. Tutto ciò
+          di cui hai bisogno a portata di mano: consulta i dati relativi alla
+          tua carriera universitaria, la tua media, i tuoi voti, gli esami
+          sostenuti e quelli mancanti e tanto altro ancora.
         </p>
       </div>
       <div className="hero__media">
