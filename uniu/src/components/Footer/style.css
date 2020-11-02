@@ -45,8 +45,15 @@ footer {
       display: flex;
       align-items: flex-end;
       margin-bottom: 2rem;
-      /* 
-      > *:first-child {
+
+      a {
+        svg path,
+        circle {
+          fill: white;
+        }
+      }
+
+      /* > *:first-child {
         border: 1px solid lime;
       }
 
