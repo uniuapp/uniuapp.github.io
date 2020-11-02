@@ -2,9 +2,9 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `UniU`,
+    description: `UniU porta la tua università all'interno del tuo smartphone. Tutto ciò di cui hai bisogno a portata di mano: consulta i dati relativi alla tua carriera universitaria, la tua media, i tuoi voti, gli esami sostenuti e quelli mancanti e tanto altro ancora.`,
+    author: `@sfal @marcotammaro`,
   },
   plugins: [
     {
