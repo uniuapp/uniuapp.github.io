@@ -7,7 +7,9 @@ const Header = () => {
   const [downloadBanner, setDownloadBanner] = useState()
 
   useEffect(() => {
-    setDownloadBanner(document.querySelector(".banner"))
+    setDownloadBanner(
+      typeof document !== `undefined` && document.querySelector(".banner")
+    )
   }, [])
 
   const scrollToBanner = () => {

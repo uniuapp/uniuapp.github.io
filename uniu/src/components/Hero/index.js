@@ -13,7 +13,9 @@ const Home = () => {
   const assetsToggle = useContext(ThemeContext)
 
   const [isDarkMode, setCurrent] = useState(
-    window.localStorage.theme === "dark" ? true : false
+    typeof window !== `undefined` && window.localStorage.theme === "dark"
+      ? true
+      : false
   )
 
   useEffect(() => {

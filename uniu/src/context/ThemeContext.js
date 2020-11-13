@@ -7,7 +7,7 @@ export const ThemeContextConsumer = ThemeContext.Consumer
 export const useToggleDarkMode = () => useContext(ThemeContext)
 
 export const ThemeContextProvider = ({ children }) => {
-  const storedTheme = window.localStorage.theme
+  const storedTheme = typeof window !== `undefined` && window.localStorage.theme
   const [darkAssets, setDarkAssets] = useState(
     storedTheme === "dark" ? true : false
   )

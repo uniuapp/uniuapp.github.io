@@ -21,7 +21,9 @@ const Features = () => {
   const assetsToggle = useContext(ThemeContext)
 
   const [isDarkMode, setCurrent] = useState(
-    window.localStorage.theme === "dark" ? true : false
+    typeof window !== `undefined` && window.localStorage.theme === "dark"
+      ? true
+      : false
   )
 
   useEffect(() => {
@@ -56,7 +58,9 @@ const Features = () => {
     },
   ]
 
-  const container = document.querySelector(".carousel__inner-container")
+  const container =
+    typeof document !== `undefined` &&
+    document.querySelector(".carousel__inner-container")
 
   useEffect(() => {
     setCarouselWidth(carouselRef.current.offsetWidth)

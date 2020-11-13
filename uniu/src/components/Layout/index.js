@@ -19,8 +19,10 @@ import { ThemeContextProvider } from "@context/ThemeContext"
 
 const Layout = ({ children }) => {
   useEffect(() => {
-    const el = document.querySelector("footer")
-    const toggle = document.querySelector(".toggle")
+    const el =
+      typeof document !== `undefined` && document.querySelector("footer")
+    const toggle =
+      typeof document !== `undefined` && document.querySelector(".toggle")
 
     // hide toggle when footer is in viewport
     const observer = new IntersectionObserver(
