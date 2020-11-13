@@ -6,6 +6,7 @@
   border-radius: 2.4rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0.5rem;
   cursor: pointer;
   user-select: none;
@@ -22,18 +23,20 @@
     left: 5rem;
   }
 
-  &__label {
-    position: absolute;
-    top: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    font-size: 1.5rem;
+  > *:first-child {
+    transform: scaleX(-1);
+  }
+
+  svg {
+    fill: var(--text);
   }
 
   &__handle {
-    width: 1.8rem;
-    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.9rem;
+    height: 2.9rem;
     background-color: var(--text);
     display: inline-block;
     border-radius: 100%;

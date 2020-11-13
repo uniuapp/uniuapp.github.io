@@ -3,6 +3,8 @@ import "./style.css"
 import React, { useContext } from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { ThemeContext } from "@context/ThemeContext"
+import { ReactComponent as Sun } from "@assets/sun.svg"
+import { ReactComponent as Moon } from "@assets/moon.svg"
 
 const Toggle = () => {
   const assetsToggle = useContext(ThemeContext)
@@ -17,9 +19,9 @@ const Toggle = () => {
           }}
           className="toggle"
         >
-          <span className="toggle__label">
-            {theme === "light" ? "DARK" : "LIGHT"}
-          </span>
+          <Moon />
+          <Sun />
+
           <span
             style={{
               transform: `translateX(${theme === "dark" ? 26 : 0}px)`,
