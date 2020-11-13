@@ -1,9 +1,18 @@
 import "./style.css"
 
 import { ReactComponent as Logo } from "@assets/logo.svg"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 const Header = () => {
+  const [downloadBanner, setDownloadBanner] = useState()
+
+  useEffect(() => {
+    setDownloadBanner(document.querySelector(".banner"))
+  }, [])
+
+  const scrollToBanner = () => {
+    downloadBanner.scrollIntoView({ behavior: "smooth" })
+  }
   return (
     <>
       <header
@@ -15,7 +24,9 @@ const Header = () => {
           </a>
           <ul>
             <li>
-              <a href="/">Download</a>
+              <span onClick={scrollToBanner} href="/">
+                Download
+              </span>
             </li>
           </ul>
         </nav>

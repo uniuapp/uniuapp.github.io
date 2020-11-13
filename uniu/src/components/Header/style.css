@@ -55,7 +55,7 @@ header {
       }
 
       li {
-        a {
+        span {
           font-size: 1.6rem;
           line-height: 1.8rem;
           text-transform: uppercase;
@@ -64,6 +64,7 @@ header {
           color: var(--white);
           padding: 1rem 2rem;
           border-radius: 50px;
+          cursor: pointer;
         }
         transition: transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 

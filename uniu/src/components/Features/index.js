@@ -25,7 +25,6 @@ const Features = () => {
   )
 
   useEffect(() => {
-    console.log(window.localStorage.theme, isDarkMode)
     setCurrent(assetsToggle.darkAssets)
   }, [assetsToggle.darkAssets])
 
