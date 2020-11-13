@@ -6,6 +6,7 @@ module.exports = {
     description: `UniU porta la tua università all'interno del tuo smartphone. Tutto ciò di cui hai bisogno a portata di mano: consulta i dati relativi alla tua carriera universitaria, la tua media, i tuoi voti, gli esami sostenuti e quelli mancanti e tanto altro ancora.`,
     author: `@sfal @marcotammaro`,
   },
+  pathPrefix: "/uniu-web",
   plugins: [
     {
       resolve: `gatsby-plugin-svgr`,
