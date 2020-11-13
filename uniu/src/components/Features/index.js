@@ -1,18 +1,33 @@
 import "./style.css"
 
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState, useContext } from "react"
 
 import ScreenOrari from "@assets/screen-orari.png"
 import ScreenEsami from "@assets/screen-esami.png"
 import ScreenPrevisioni from "@assets/screen-previsioni.png"
+import ScreenOrariDark from "@assets/screen-orari-dark.png"
+import ScreenEsamiDark from "@assets/screen-esami-dark.png"
+import ScreenPrevisioniDark from "@assets/screen-previsioni-dark.png"
 import Phone from "@components/Phone"
 import { ReactComponent as Arrow } from "@assets/arrow.svg"
 import { ReactComponent as Blob } from "@assets/blob-2.svg"
+import { ThemeContext } from "@context/ThemeContext"
 
 const Features = () => {
   const itemRef = useRef()
   const carouselRef = useRef()
   const containerRef = useRef()
+
+  const assetsToggle = useContext(ThemeContext)
+
+  const [isDarkMode, setCurrent] = useState(
+    window.localStorage.theme === "dark" ? true : false
+  )
+
+  useEffect(() => {
+    console.log(window.localStorage.theme, isDarkMode)
+    setCurrent(assetsToggle.darkAssets)
+  }, [assetsToggle.darkAssets])
 
   const [index, setIndex] = useState(0)
 
@@ -26,19 +41,19 @@ const Features = () => {
       title: "Le tue lezioni",
       paragraph:
         "Registrara l'orario delle lezioni e visualizza il piano della giornata o dell'intera settimana. L'app ti invierà una notifica quando è arrivato il momento di cambiare aula.",
-      screen: ScreenOrari,
+      screen: isDarkMode ? ScreenOrari : ScreenOrariDark,
     },
     {
       title: "I tuoi esami",
       paragraph:
         "Monitora facilmente la tua carriera universitaria. Esami, CFU e voti sempre a portata di mano.",
-      screen: ScreenEsami,
+      screen: isDarkMode ? ScreenEsami : ScreenEsamiDark,
     },
     {
       title: "Le tue statistiche",
       paragraph:
         "Fai previsioni sugli esami futuri in maniera intelligente e monitora come cambierebbe la tua media.",
-      screen: ScreenPrevisioni,
+      screen: isDarkMode ? ScreenPrevisioni : ScreenPrevisioniDark,
     },
   ]
 

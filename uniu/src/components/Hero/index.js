@@ -1,13 +1,25 @@
 import "./style.css"
 
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { ReactComponent as Ellipse } from "@assets/ellipse.svg"
 import { ReactComponent as Blob } from "@assets/blob-1.svg"
 
 import ScreenEsami from "@assets/screen-esami.png"
+import ScreenEsamiDark from "@assets/screen-esami-dark.png"
 import Phone from "@components/Phone"
+import { ThemeContext } from "@context/ThemeContext"
 
 const Home = () => {
+  const assetsToggle = useContext(ThemeContext)
+
+  const [isDarkMode, setCurrent] = useState(
+    window.localStorage.theme === "dark" ? true : false
+  )
+
+  useEffect(() => {
+    setCurrent(assetsToggle.darkAssets)
+  }, [assetsToggle.darkAssets])
+
   return (
     <div
       className="hero"
@@ -30,7 +42,7 @@ const Home = () => {
           <Blob />
         </div>
         <div className="hero__media__device">
-          <Phone screen={ScreenEsami} />
+          <Phone screen={isDarkMode ? ScreenEsami : ScreenEsamiDark} />
         </div>
       </div>
     </div>
