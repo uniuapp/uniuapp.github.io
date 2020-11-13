@@ -13,8 +13,9 @@ import "@styles/global.css"
 import Footer from "@components/Footer"
 import Header from "@components/Header"
 import PropTypes from "prop-types"
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Toggle from "@components/Toggle"
+import { ThemeContextProvider } from "@context/ThemeContext"
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -45,19 +46,21 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
+      <ThemeContextProvider>
+        <Header />
 
-      <div
-        style={{
-          margin: `0 auto`,
-          padding: `0`,
-          transition: "color 0.2s ease-out, background 0.2s ease-out",
-        }}
-      >
-        <main>{children}</main>
-        <Footer />
-      </div>
-      <Toggle />
+        <div
+          style={{
+            margin: `0 auto`,
+            padding: `0`,
+            transition: "color 0.2s ease-out, background 0.2s ease-out",
+          }}
+        >
+          <main>{children}</main>
+          <Footer />
+        </div>
+        <Toggle />
+      </ThemeContextProvider>
     </>
   )
 }

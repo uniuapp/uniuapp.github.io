@@ -28,6 +28,7 @@ module.exports = {
           "@pages": path.resolve(__dirname, "src/pages"),
           "@styles": path.resolve(__dirname, "src/styles"),
           "@utils": path.resolve(__dirname, "src/utils"),
+          "@context": path.resolve(__dirname, "src/context"),
         },
         extensions: ["js"],
       },
