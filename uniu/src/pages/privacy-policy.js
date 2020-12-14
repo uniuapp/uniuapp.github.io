@@ -5,9 +5,9 @@ import "../styles/privacy-policy.css"
 
 const TermsAndConditions = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Privacy Policy" />
     <div className="pp-container">
-      <h1>TERMINI E CONDIZIONI</h1>
+      <h1>PRIVACY POLICY</h1>
       <p>
         UniU è un'applicazione rivolta a tutti gli studenti universitari. Nel
         rispetto e tutela della privacy dei propri utenti, UniU non utilizza,
@@ -16,6 +16,7 @@ const TermsAndConditions = () => (
         dispositivo utilizzato.
       </p>
       <br /> <br /> <br /> <br />
+      <br />
       <p>
         Le icone per i link ai social sono state realizzate da{" "}
         <a href="https://jam-icons.com/" title="Jam Icons">
