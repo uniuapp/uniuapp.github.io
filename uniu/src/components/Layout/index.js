@@ -48,21 +48,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <ThemeContextProvider>
-        <Header />
+      <Header />
 
-        <div
-          style={{
-            margin: `0 auto`,
-            padding: `0`,
-            transition: "color 0.2s ease-out, background 0.2s ease-out",
-          }}
-        >
-          <main>{children}</main>
-          <Footer />
-        </div>
-        <Toggle />
-      </ThemeContextProvider>
+      <div
+        style={{
+          margin: `0 auto`,
+          padding: `0`,
+          transition: "color 0.2s ease-out, background 0.2s ease-out",
+        }}
+      >
+        <main>{children}</main>
+        <Footer />
+      </div>
+      <Toggle />
     </>
   )
 }

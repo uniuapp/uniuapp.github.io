@@ -26,9 +26,3 @@ export const ThemeContextProvider = ({ children }) => {
     </ThemeContext.Provider>
   )
 }
-
-/* 
-  The dark mode can def. be improved and turned into something that actually makes sense.
-  We only use react context to change the assets but it would be good to use it for the whole theme too
-  and avoid gatsby plugin
-*/

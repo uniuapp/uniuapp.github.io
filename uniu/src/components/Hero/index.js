@@ -44,7 +44,7 @@ const Home = () => {
           <Blob />
         </div>
         <div className="hero__media__device">
-          <Phone screen={isDarkMode ? ScreenEsami : ScreenEsamiDark} />
+          <Phone screen={isDarkMode ? ScreenEsamiDark : ScreenEsami} />
         </div>
       </div>
     </div>

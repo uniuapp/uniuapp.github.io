@@ -42,19 +42,19 @@ const Features = () => {
       title: "Le tue lezioni",
       paragraph:
         "Registrara l'orario delle lezioni e visualizza il piano della giornata o dell'intera settimana. L'app ti invierà una notifica quando è arrivato il momento di cambiare aula.",
-      screen: isDarkMode ? ScreenOrari : ScreenOrariDark,
+      screen: isDarkMode ? ScreenOrariDark : ScreenOrari,
     },
     {
       title: "I tuoi esami",
       paragraph:
         "Monitora facilmente la tua carriera universitaria. Esami, CFU e voti sempre a portata di mano.",
-      screen: isDarkMode ? ScreenEsami : ScreenEsamiDark,
+      screen: isDarkMode ? ScreenEsamiDark : ScreenEsami,
     },
     {
       title: "Le tue statistiche",
       paragraph:
         "Fai previsioni sugli esami futuri in maniera intelligente e monitora come cambierebbe la tua media.",
-      screen: isDarkMode ? ScreenPrevisioni : ScreenPrevisioniDark,
+      screen: isDarkMode ? ScreenPrevisioniDark : ScreenPrevisioni,
     },
   ]
 

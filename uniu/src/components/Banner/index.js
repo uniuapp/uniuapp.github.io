@@ -46,11 +46,11 @@ const Banner = () => {
       </div>
       <div className="banner__right">
         <Phone
-          screen={isDarkMode ? ScreenOrariBezels : ScreenOrariBezelsDark}
+          screen={isDarkMode ? ScreenOrariBezelsDark : ScreenOrariBezels}
           bezels
         />
         <Phone
-          screen={isDarkMode ? ScreenEsamiBezels : ScreenEsamiBezelsDark}
+          screen={isDarkMode ? ScreenEsamiBezelsDark : ScreenEsamiBezels}
           bezels
         />
       </div>

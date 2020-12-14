@@ -15,7 +15,7 @@ const Toggle = () => {
         <div
           onClick={() => {
             toggleTheme(theme === "light" ? "dark" : "light")
-            assetsToggle.toggleAssets()
+            // assetsToggle.toggleAssets()
           }}
           className="toggle"
         >
