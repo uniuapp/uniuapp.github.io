@@ -36,10 +36,14 @@ const Banner = () => {
           </h3>
         </div>
         <div className="banner__left__badges">
-          <a href="/" className="banner__left__badges__apple">
+          <a
+            target="_blank"
+            href="https://apps.apple.com/it/app/uniu-luniversit%C3%A0-smart/id1486762229"
+            className="banner__left__badges__apple"
+          >
             <AppStore />
           </a>
-          <a href="/" className="banner__left__badges__google">
+          <a target="_blank" href="/" className="banner__left__badges__google">
             <img src={GooglePlay} />
           </a>
         </div>

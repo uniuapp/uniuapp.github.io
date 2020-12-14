@@ -18,10 +18,18 @@ const Footer = () => {
           <a href="mailto:uniu.app@gmail.com">
             <Email />
           </a>
-          <a href="https://www.instagram.com/uniu.app/" target="_blank">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/uniu.app/"
+            target="_blank"
+          >
             <Instagram />
           </a>
-          <a href="https://www.facebook.com/UniUapp" target="_blank">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/UniUapp"
+            target="_blank"
+          >
             <Facebook />
           </a>
         </div>

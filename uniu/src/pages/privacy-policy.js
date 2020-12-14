@@ -19,7 +19,7 @@ const TermsAndConditions = () => (
       <br />
       <p>
         Le icone per i link ai social sono state realizzate da{" "}
-        <a href="https://jam-icons.com/" title="Jam Icons">
+        <a target="_blank" href="https://jam-icons.com/" title="Jam Icons">
           Jam Icons
         </a>{" "}
         .
