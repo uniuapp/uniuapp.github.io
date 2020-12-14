@@ -4,7 +4,7 @@
   "description": "Website for UniU app",
   "version": "0.1.0",
   "author": "sfal, marcotammaro",
-  "homepage": "https:/sfal.github.io",
+  "homepage": "https:/sfal.github.io/uniu-web",
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
     "classnames": "^2.2.6",
