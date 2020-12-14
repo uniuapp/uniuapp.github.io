@@ -4,8 +4,8 @@ import React, { useContext, useEffect, useState } from "react"
 import { ReactComponent as Ellipse } from "@assets/ellipse.svg"
 import { ReactComponent as Blob } from "@assets/blob-1.svg"
 
-import ScreenEsami from "@assets/screen-esami.png"
-import ScreenEsamiDark from "@assets/screen-esami-dark.png"
+import ScreenEsami from "../../assets/screen-esami.png"
+import ScreenEsamiDark from "../../assets/screen-esami-dark.png"
 import Phone from "@components/Phone"
 import { ThemeContext } from "@context/ThemeContext"
 
