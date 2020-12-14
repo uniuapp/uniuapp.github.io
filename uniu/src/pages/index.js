@@ -8,7 +8,7 @@ import Banner from "@components/Banner"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="UniU - L'università smart" />
     <Hero />
     <Features />
     <Banner />
