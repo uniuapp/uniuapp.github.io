@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="content__right">
-          <Link to="/privacy-policy" activeStyle={{ textDecoration: "none" }}>
+          <Link to="/privacy_policy" activeStyle={{ textDecoration: "none" }}>
             Termini e Condizioni
           </Link>
         </div>
