@@ -15,7 +15,7 @@ const TermsAndConditions = () => (
         Tutti i dati presenti sono esclusivamente salvati localmente sul
         dispositivo utilizzato.
       </p>
-      <br /> <br /> <br /> <br />
+      <br /> <br /> <br />
       <br />
       <p>
         Le icone per i link ai social sono state realizzate da{" "}
