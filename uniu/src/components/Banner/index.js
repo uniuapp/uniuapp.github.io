@@ -39,11 +39,17 @@ const Banner = () => {
           <a
             target="_blank"
             href="https://apps.apple.com/it/app/uniu-luniversit%C3%A0-smart/id1486762229"
+            rel="noreferrer"
             className="banner__left__badges__apple"
           >
             <AppStore />
           </a>
-          <a target="_blank" href="/" className="banner__left__badges__google">
+          <a
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=it.uniu"
+            rel="noreferrer"
+            className="banner__left__badges__google"
+          >
             <img src={GooglePlay} />
           </a>
         </div>
