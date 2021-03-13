@@ -8,6 +8,7 @@ import ScreenPrevisioni from "@assets/screen-previsioni.png"
 import ScreenOrariDark from "@assets/screen-orari-dark.png"
 import ScreenEsamiDark from "@assets/screen-esami-dark.png"
 import ScreenPrevisioniDark from "@assets/screen-previsioni-dark.png"
+import ScreenTasse from "@assets/screen-tasse.png"
 import Phone from "@components/Phone"
 import { ReactComponent as Arrow } from "@assets/arrow.svg"
 import { ReactComponent as Blob } from "@assets/blob-2.svg"
@@ -41,7 +42,7 @@ const Features = () => {
     {
       title: "Le tue lezioni",
       paragraph:
-        "Registrara l'orario delle lezioni e visualizza il piano della giornata o dell'intera settimana. L'app ti invierà una notifica quando è arrivato il momento di cambiare aula.",
+        "Registra l'orario delle lezioni e visualizza il piano della giornata o dell'intera settimana. L'app ti invierà una notifica quando è arrivato il momento di cambiare aula.",
       screen: isDarkMode ? ScreenOrariDark : ScreenOrari,
     },
     {
@@ -55,6 +56,12 @@ const Features = () => {
       paragraph:
         "Fai previsioni sugli esami futuri in maniera intelligente e monitora come cambierebbe la tua media.",
       screen: isDarkMode ? ScreenPrevisioniDark : ScreenPrevisioni,
+    },
+    {
+      title: "Le tue tasse",
+      paragraph:
+        "Tieni sempre d'occhio le scadenze per non dimenticare mai nessun pagamento.",
+      screen: ScreenTasse,
     },
   ]
 
@@ -117,13 +124,26 @@ const Features = () => {
                 className="carousel__item__ellipse"
                 style={{
                   backgroundColor:
-                    i === 0 ? "#9472ee" : i === 1 ? "#007afe" : "#ea6ba3",
+                    i === 0
+                      ? "#9472ee"
+                      : i === 1
+                      ? "#007afe"
+                      : i === 2
+                      ? "#ea6ba3"
+                      : "#EBB303",
                 }}
               />
               <div
                 className="carousel__item__blob"
                 style={{
-                  color: i === 0 ? "#ebb303" : i === 1 ? "#28b227" : "#6c829e",
+                  color:
+                    i === 0
+                      ? "#ebb303"
+                      : i === 1
+                      ? "#28b227"
+                      : i === 2
+                      ? "#6c829e"
+                      : "#00C2EC",
                 }}
               >
                 <Blob />

@@ -30,7 +30,7 @@ const Banner = () => {
     >
       <div className="banner__left">
         <div className="banner__left__copy">
-          <h5>UNIU</h5>
+          <h5>UniU</h5>
           <h3>
             Scaricala ora su <br /> Google Play e App Store
           </h3>

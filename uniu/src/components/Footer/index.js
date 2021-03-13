@@ -11,7 +11,7 @@ const Footer = () => {
     <footer>
       <div className="content">
         <div className="content__left">
-          <h2>UNIU</h2>
+          <h2>UniU</h2>
           <p>© Marco Tammaro - Serena Falchieri</p>
         </div>
         <div className="content__middle">
