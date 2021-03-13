@@ -21,14 +21,14 @@ const Footer = () => {
           <a
             target="_blank"
             href="https://www.instagram.com/uniu.app/"
-            target="_blank"
+            rel="noreferrer"
           >
             <Instagram />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/UniUapp"
-            target="_blank"
+            rel="noreferrer"
           >
             <Facebook />
           </a>

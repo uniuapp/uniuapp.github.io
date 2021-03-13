@@ -13,9 +13,8 @@ import "@styles/global.css"
 import Footer from "@components/Footer"
 import Header from "@components/Header"
 import PropTypes from "prop-types"
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import Toggle from "@components/Toggle"
-import { ThemeContextProvider } from "@context/ThemeContext"
 
 const Layout = ({ children }) => {
   useEffect(() => {

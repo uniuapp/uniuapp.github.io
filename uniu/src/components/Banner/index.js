@@ -50,7 +50,7 @@ const Banner = () => {
             rel="noreferrer"
             className="banner__left__badges__google"
           >
-            <img src={GooglePlay} />
+            <img src={GooglePlay} alt="Google Play Download Button" />
           </a>
         </div>
       </div>
