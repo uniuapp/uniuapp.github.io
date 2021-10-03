@@ -1,0 +1,61 @@
+{
+  "name": "uniu-web",
+  "private": true,
+  "description": "Website for UniU app",
+  "version": "0.1.0",
+  "author": "sfal, marcotammaro",
+  "homepage": "https:/sfal.github.io/uniu-web",
+  "dependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "classnames": "^2.2.6",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "file-loader": "^6.1.0",
+    "gatsby": "^2.24.63",
+    "gatsby-image": "^2.4.19",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-dark-mode": "^1.1.2",
+    "gatsby-plugin-manifest": "^2.4.30",
+    "gatsby-plugin-offline": "^3.2.28",
+    "gatsby-plugin-postcss": "^2.3.12",
+    "gatsby-plugin-react-helmet": "^3.3.11",
+    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-source-filesystem": "^2.3.35",
+    "gatsby-transformer-sharp": "^2.5.15",
+    "gh-pages": "^3.1.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^5.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "dev": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfal/uniu-web"
+  },
+  "bugs": {
+    "url": "https://github.com/sfal/uniu-web/issues"
+  }
+}

@@ -1,0 +1,46 @@
+.toggle {
+  width: 5.6rem;
+  height: 3rem;
+  background-color: var(--bg);
+  border: 1px solid var(--text);
+  border-radius: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: auto;
+  transition: transform 0.25s ease-out, border-color 0.25s ease-in;
+
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  z-index: 99999;
+
+  @media (--tablet) {
+    bottom: 2.5rem;
+    left: 5rem;
+  }
+
+  > *:first-child {
+    transform: scaleX(-1);
+  }
+
+  svg {
+    fill: var(--text);
+  }
+
+  &__handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.9rem;
+    height: 2.9rem;
+    background-color: var(--text);
+    display: inline-block;
+    border-radius: 100%;
+    transition: transform 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      background 0.2s ease-in;
+  }
+}

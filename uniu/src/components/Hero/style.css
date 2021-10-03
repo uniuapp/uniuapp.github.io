@@ -1,0 +1,117 @@
+.hero {
+  display: flex;
+  height: 90vh;
+  flex-direction: column-reverse;
+  padding: 5rem 2.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (--tablet) {
+    flex-direction: row;
+    padding: 5rem;
+    height: 70vh;
+  }
+
+  @media (--laptop) {
+    height: 90vh;
+    padding: 5rem 15rem;
+  }
+
+  &__copy {
+    background-color: var(--bg);
+
+    @media (--tablet) {
+      width: 50%;
+    }
+
+    @media (--laptop) {
+      padding-top: 8rem;
+    }
+
+    h1 {
+      max-width: 50rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      max-width: 50rem;
+      color: var(--text-light);
+    }
+  }
+
+  &__media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media (--tablet) {
+      width: 50%;
+    }
+
+    @media (--laptop) {
+      width: 50%;
+      background-image: url("../../assets/triangles.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &__ellipse,
+    &__blob {
+      position: absolute;
+      transition: transform 0.25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.25s ease-in-out;
+      }
+    }
+
+    &__ellipse {
+      display: none;
+
+      @media (--tablet) {
+        display: block;
+        top: 0;
+        left: 12rem;
+      }
+      @media (--laptop) {
+        top: 0;
+        left: 9rem;
+      }
+    }
+
+    &__blob {
+      display: none;
+
+      @media (--tablet) {
+        display: block;
+        bottom: -10rem;
+        right: 0;
+        width: 40rem;
+      }
+      @media (--laptop) {
+        bottom: -2rem;
+        right: 13rem;
+      }
+    }
+
+    &__device {
+      z-index: 2;
+
+      > *:first-child {
+        width: 20rem;
+
+        @media (--tablet) {
+          width: 25rem;
+        }
+
+        @media (--laptop) {
+          width: 30rem;
+        }
+      }
+    }
+  }
+}
